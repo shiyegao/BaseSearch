@@ -50,9 +50,9 @@ class MultiplierPredictor_onehot(nn.Module):
         return x
 
 
-class CNN1D(nn.Module):
+class ConvNet1D(nn.Module):
     def __init__(self, input_channels, seq_length, num_filters, kernel_sizes):
-        super(CNN1D, self).__init__()
+        super(ConvNet1D, self).__init__()
 
         self.conv_layers = nn.ModuleList()
 
@@ -183,12 +183,12 @@ class MaizeAdaboostPredictor(Predictor):
     NAME = "maize_adaboost"
 
 
-class MaizeCNNPredictor(CudaPredictor):
-    NAME = "maize_cnn"
+class MaizeConvNetPredictor(CudaPredictor):
+    NAME = "maize_ConvNet"
 
     def __init__(self, root_dir):
         super().__init__(root_dir)
-        self.model = CNN1D(
+        self.model = ConvNet1D(
             input_channels=4, seq_length=60, num_filters=[128, 128], kernel_sizes=[5, 5]
         ).to(self.device)
         self.model.load_state_dict(torch.load(f"{self.root_dir}/{self.NAME}.pth"))

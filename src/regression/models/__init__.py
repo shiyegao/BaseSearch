@@ -1,7 +1,7 @@
-from .cnn import CNN1D
+from .ConvNet import ConvNet1D
 
 models = {
-    "cnn": CNN1D,
+    "ConvNet": ConvNet1D,
 }
 
 

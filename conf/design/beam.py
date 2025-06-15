@@ -7,7 +7,7 @@ seed = [2024, 2025, 2026]
 root_dir = "data/ckpt"
 output_dir = "output"
 scorer = [
-    ["MaizeRFPredictor", "MaizeAdaboostPredictor", "MaizeCNNPredictor"],
+    ["MaizeRFPredictor", "MaizeAdaboostPredictor", "MaizeConvNetPredictor"],
 ]
 
 

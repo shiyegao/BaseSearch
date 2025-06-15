@@ -24,9 +24,9 @@ uv sync
 To train enhancer activity regressors, run the following commands:
 
 ```bash
-uv run cnn_reg.py
 uv run adaboost_reg.py
 uv run rf_reg.py
+uv run convnet_reg.py
 ```
 
 You can modify the model hyperparameters in the corresponding configuration files located at: `conf/regression`.
