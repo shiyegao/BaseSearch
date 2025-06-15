@@ -1,5 +1,5 @@
 # Introduction
-This repository contains the official implementation of the paper: "Genome-wide mining and designing of short transcriptional enhancers in plants".
+This repository contains the official implementation of the paper: "Genome-wide mining and de novo designing of plant enhancers".
 
 # Installation
 
