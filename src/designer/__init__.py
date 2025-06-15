@@ -4,7 +4,7 @@ from .ga_designer import GADesigner
 from .anneal_designer import AnnealDesigner
 from .beam_designer import BeamDesigner
 from .mcts_designer import MCTSDesigner
-from .baseevolve_designer import BaseEvolveDesigner
+from .basesearch_designer import BaseSearchDesigner
 
 
 __all__ = [
@@ -14,5 +14,5 @@ __all__ = [
     "AnnealDesigner",
     "BeamDesigner",
     "MCTSDesigner",
-    "BaseEvolveDesigner",
+    "BaseSearchDesigner",
 ]

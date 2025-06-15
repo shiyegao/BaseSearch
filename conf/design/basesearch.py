@@ -1,5 +1,5 @@
 task = "sweep"
-tag = "baseevolve_maize"
+tag = "BaseSearch_maize"
 seed = [2024, 2025, 2026]
 
 
@@ -14,7 +14,7 @@ scorer = [
 # Design
 design = [
     {
-        "mode": "BaseEvolveDesigner",
+        "mode": "BaseSearchDesigner",
         "decay": decay,
         "num_iterations": 100000,
         "start": "AAACAACATACACATCTGTATTTCCATATGAAAGCACCCGTTTCCTTTCTTGATTATCTG",

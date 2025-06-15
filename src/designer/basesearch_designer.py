@@ -6,7 +6,7 @@ from .ga_designer import mutate_sequence
 from .random_single_designer import generate_random_single_sequence
 
 
-class BaseEvolveDesigner(Designer):
+class BaseSearchDesigner(Designer):
     def __init__(self, cfg):
         super().__init__(cfg)
         self.decay = cfg.design["decay"]

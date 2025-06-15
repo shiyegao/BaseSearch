@@ -4,9 +4,9 @@ import sys
 
 sys.path.append(".")
 
-from utils.tool import load_config, set_seed
-from utils.scorer import load_scorer
-import utils.designer as designer_utils
+from src.tool import load_config, set_seed
+from src.scorer import load_scorer
+import src.designer as designer_utils
 
 
 def sweep(cfg):

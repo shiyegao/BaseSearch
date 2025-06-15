@@ -8,10 +8,10 @@ import sys
 
 sys.path.append(".")
 
-from utils.regression.dataset.dataset import create_dataloader
-from utils.tool import load_config
-from utils.regression.models import get_model
-from utils.regression.modules.loss import get_loss_function
+from src.regression.dataset.dataset import create_dataloader
+from src.tool import load_config
+from src.regression.models import get_model
+from src.regression.modules.loss import get_loss_function
 
 
 class Trainer:

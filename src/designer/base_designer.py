@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import wandb
 
-from utils.tool import setup_logger
+from src.tool import setup_logger
 
 
 DNA_BASES = ["A", "T", "C", "G"]

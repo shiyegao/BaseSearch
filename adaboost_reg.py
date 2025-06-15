@@ -7,8 +7,8 @@ from sklearn.ensemble import AdaBoostRegressor
 import sys
 
 sys.path.append(".")
-from utils.regression.dataset.dataset import create_dataloader
-from utils.tool import load_config
+from src.regression.dataset.dataset import create_dataloader
+from src.tool import load_config
 
 
 def evaluate_adaboost(model, dataloader):

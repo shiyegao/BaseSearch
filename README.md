@@ -5,8 +5,8 @@ This repository contains the official implementation of the paper: "Genome-wide 
 
 First, clone the repository:
 ```bash
-git clone https://github.com/shiyegao/BaseEvolve.git
-cd BaseEvolve
+git clone https://github.com/shiyegao/BaseSearch.git
+cd BaseSearch
 ```
 
 
@@ -24,9 +24,9 @@ uv sync
 To train enhancer activity regressors, run the following commands:
 
 ```bash
-uv run scripts/cnn_reg.py
-uv run scripts/adaboost_reg.py
-uv run scripts/rf_reg.py
+uv run cnn_reg.py
+uv run adaboost_reg.py
+uv run rf_reg.py
 ```
 
 You can modify the model hyperparameters in the corresponding configuration files located at: `conf/regression`.
@@ -39,19 +39,19 @@ To accelerate the design process, you can reduce the `num_iterations` parameter 
 If you’d like to log experiments with [wandb](https://wandb.ai/site), set the `use_wandb` to `True` in the config file.
 Also, specify your `wandb_proj_name` and `entity`.
 
-### BaseEvolve Algorithm
-Run the BaseEvolve algorithm with:
+### BaseSearch Algorithm
+Run the BaseSearch algorithm with:
 ```bash
-uv run scripts/design.py conf/design/baseevolve.py
+uv run design.py conf/design/basesearch.py
 ```
 
 ### Baseline Methods
 You can also run several baseline enhancer design strategies:
 ```bash
-uv run scripts/design.py conf/design/random.py
-uv run scripts/design.py conf/design/random_single.py
-uv run scripts/design.py conf/design/beam.py
-uv run scripts/design.py conf/design/anneal.py
-uv run scripts/design.py conf/design/mcts.py
-uv run scripts/design.py conf/design/ga.py
+uv run design.py conf/design/random.py
+uv run design.py conf/design/random_single.py
+uv run design.py conf/design/beam.py
+uv run design.py conf/design/anneal.py
+uv run design.py conf/design/mcts.py
+uv run design.py conf/design/ga.py
 ```

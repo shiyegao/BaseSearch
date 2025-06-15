@@ -3,11 +3,9 @@ import torch
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
-import sys
 
-sys.path.append(".")
-from utils.regression.dataset.dataset import create_dataloader
-from utils.tool import load_config
+from src.regression.dataset.dataset import create_dataloader
+from src.tool import load_config
 
 
 def evaluate_rf(model, dataloader):
